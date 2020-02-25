@@ -1,0 +1,11 @@
+@mixin flex-center-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+@mixin flex-basis-column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 200px;
+}

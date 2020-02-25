@@ -10,20 +10,59 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 header {
   width: 100%;
   height: 70px;
   background: #2e3a46;
 }
 
-header .container {
-  width: 1070px;
-  height: 100%;
-  margin: 0 auto;
-}
-
 header .container img {
   height: 50px;
   margin-top: 10px;
+}
+
+main .cds-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+main .cds-container .album {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  padding: 20px;
+  margin: 10px 20px;
+  height: 360px;
+  background: #2e3a46;
+  text-align: center;
+}
+
+main .cds-container .album img {
+  max-width: 100%;
+}
+
+main .cds-container .album h3 {
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+main .cds-container .album span.author {
+  color: #808080;
+  font-size: 20px;
+}
+
+main .cds-container .album span.year {
+  color: #808080;
 }
 

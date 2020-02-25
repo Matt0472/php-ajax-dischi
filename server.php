@@ -1,10 +1,10 @@
 <?php 
  $database = [
      [
-      'title' => 'New Jersey',
-      'author' => 'Bon Jovi',
-      'year' => 1988,
-      'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
+      'title' => 'A Night At The Opera',
+      'author' => 'Queen',
+      'year' => 1975,
+      'poster' => 'https://img.discogs.com/GEOAdtIS8TJ8ik_DlIlzZNB1fzM=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-612780-1541367145-2127.jpeg.jpg'
      ],
      [
       'title' => 'Il Guardiano Del Faro',
