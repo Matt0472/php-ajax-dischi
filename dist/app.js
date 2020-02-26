@@ -15826,16 +15826,23 @@ $(document).ready(function () {
       var template = Handlebars.compile(source);
 
       for (var i = 0; i < data.length; i++) {
-        var thisCD = data[i];
-        console.log(thisCD);
-        var context = {
-          poster: thisCD.poster,
-          title: thisCD.title,
-          author: thisCD.author,
-          year: thisCD.year
-        };
-        var html = template(context);
-        $('.cds-container').append(html);
+        if (data.length > 0) {
+          var thisCD = data[i];
+          console.log(thisCD);
+          var context = {
+            poster: thisCD.poster,
+            title: thisCD.title,
+            author: thisCD.author,
+            year: thisCD.year
+          };
+          var html = template(context);
+          $('.cds-container').append(html);
+        } else {
+          var source = $('#noresult-template').html();
+          var template = Handlebars.compile(source);
+          var html = template();
+          $('.cds-container').append(html);
+        }
       }
     },
     error: function error(_error) {

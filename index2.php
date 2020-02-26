@@ -24,7 +24,7 @@
 
 
 
-    <!-- scritp handlebars -->
+    <!-- template cd handlebars -->
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="album">
         <img src= "{{poster}}" alt="">
@@ -33,6 +33,10 @@
         <span class="year">{{year}}</span>
       </div>
     </script>
+    <!-- template no risultati -->
+      <script id="noresult-template" type="text/x-handlebars-template">
+        <li>Nessun risultato per la tua ricerca</li>
+      </script>
     <!-- nostro script -->
     <script src="dist/app.js"></script>
   </body>
