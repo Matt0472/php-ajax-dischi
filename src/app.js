@@ -9,7 +9,12 @@ $(document).ready(function() {
       url: 'http://localhost/php-ajax-dischi/ajax-database.php',
       method: 'GET',
       success: function (data) {
-        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+          var thisCD = data[i];
+          console.log(thisCD);
+          
+          
+        }
         
       },
       error: function(error) {
