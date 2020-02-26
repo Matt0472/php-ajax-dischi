@@ -20,6 +20,11 @@
         
       </div>
     </main>
+
+
+
+
+    <!-- scritp handlebars -->
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="album">
         <img src= "{{poster}}" alt="">
@@ -28,6 +33,7 @@
         <span class="year">{{year}}</span>
       </div>
     </script>
+    <!-- nostro script -->
     <script src="dist/app.js"></script>
   </body>
 </html>
