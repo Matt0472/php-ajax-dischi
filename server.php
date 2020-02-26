@@ -53,6 +53,24 @@
       'author' => 'Elettra Lamborghini',
       'year' => 2019,
       'poster' => 'https://img.discogs.com/3d4odXocR3qUg8Qv_R4W_r7tkVE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-13744395-1560193308-7189.jpeg.jpg'
+     ],
+     [
+       'title' => 'Resurrection',
+      'author' => 'Tupac',
+      'year' => 2003,
+      'poster' => 'https://img.discogs.com/FlysnZSVB6HH4pZJPg32KGp0jyA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-251691-1397881058-6774.jpeg.jpg'
+     ],
+     [
+       'title' => 'Life After Death',
+      'author' => 'The Notorious B.I.G.',
+      'year' => 1997,
+      'poster' => 'https://img.discogs.com/Nk11p9VNkLrkaVLsLDi1Yzv4thY=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-268090-1483298341-6438.jpeg.jpg'
+     ],
+     [
+       'title' => 'Get Rich Or Die Tryin\'',
+      'author' => '50 Cent',
+      'year' => 2002,
+      'poster' => 'https://img.discogs.com/pnJl5QsgBXhSNOr1WEsFNCfg5WM=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-258882-1425707940-8805.jpeg.jpg'
      ]
  ];
 ?>
