@@ -16,6 +16,8 @@ $(document).ready(function() {
       }
     }
   );  
+
+
   $('#authors').change(function() {
     var thisAuthor = $(this).val();
     console.log(thisAuthor);
@@ -41,6 +43,7 @@ $(document).ready(function() {
 // FUNCTION
 // funzione per la stampa dei risultati
 function printResult(result) {
+  reset();
   var source = $('#entry-template').html();
   var template = Handlebars.compile(source);
   for (var i = 0; i < result.length; i++) {
@@ -66,4 +69,8 @@ function printNoResult() {
   var template = Handlebars.compile(source);
   var html = template();
   $('.cds-container').append(html);
+}
+
+function reset() {
+  $('.cds-container').html('');
 }

@@ -3,14 +3,14 @@
   
   $author = $_GET['author'];
 
-  if (empty($author)) {
+  if (empty($author) || $author === 'Seleziona un autore') {
     header('Content-Type: application/json');
     echo json_encode($database);
   } else {
     $cdsFiltered = [];
     foreach ($database as $cd) {
-      if ($cd['author'] == $author) {
-        $cdsFiltered = $cd;
+      if ($cd['author'] === $author) {
+        $cdsFiltered[] = $cd;
       }
     }
     if (empty($cdsFiltered)) {
@@ -24,6 +24,6 @@
       ];
     }
     header('Content-Type: application/json');
-    echo json_encode($database);
+    echo json_encode($cdsFiltered);
   }
 ?>

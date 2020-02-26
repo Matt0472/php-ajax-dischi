@@ -15849,6 +15849,7 @@ $(document).ready(function () {
 // funzione per la stampa dei risultati
 
 function printResult(result) {
+  reset();
   var source = $('#entry-template').html();
   var template = Handlebars.compile(source);
 
@@ -15875,6 +15876,10 @@ function printNoResult() {
   var template = Handlebars.compile(source);
   var html = template();
   $('.cds-container').append(html);
+}
+
+function reset() {
+  $('.cds-container').html('');
 }
 
 /***/ }),
