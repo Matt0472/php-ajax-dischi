@@ -11,7 +11,7 @@ $(document).ready(function() {
       success: function (data) {
         printResult(data);
       },
-      error: function(error) {
+      error: function (request, state, errors) {
         alert('errore');
       }
     }
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 
 // FUNCTION
-
+// funzione per la stampa dei risultati
 function printResult(result) {
   var source = $('#entry-template').html();
   var template = Handlebars.compile(source);
@@ -42,7 +42,7 @@ function printResult(result) {
   }
 }
 
-
+// funzione se non ci sono risultati
 function printNoResult() {
   var source = $('#noresult-template').html();
   var template = Handlebars.compile(source);

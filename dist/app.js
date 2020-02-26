@@ -15824,11 +15824,12 @@ $(document).ready(function () {
     success: function success(data) {
       printResult(data);
     },
-    error: function error(_error) {
+    error: function error(request, state, errors) {
       alert('errore');
     }
   });
 }); // FUNCTION
+// funzione per la stampa dei risultati
 
 function printResult(result) {
   var source = $('#entry-template').html();
@@ -15850,7 +15851,8 @@ function printResult(result) {
       printNoResult();
     }
   }
-}
+} // funzione se non ci sono risultati
+
 
 function printNoResult() {
   var source = $('#noresult-template').html();
