@@ -9,9 +9,7 @@
     <meta charset="utf-8">
     <!-- link al nostro stile -->
     <link rel="stylesheet" href="dist/app.css">
-    <!-- link google font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title></title>
+    <title>Spotify Web</title>
   </head>
   <body>
     <header>
@@ -22,6 +20,7 @@
 
     <main>
       <div class="cds-container container">
+      <?php if (!empty($database)) { ?>
         <?php foreach ($database as $key => $data) { ?>
           <div class="album">
             <img src="<?php echo $data['poster']; ?>" alt="">
@@ -30,8 +29,9 @@
             <span class="year"><?php echo $data['year']; ?></span>
           </div>
         <?php }  ?>
-
-       
+      <?php } else { ?>
+        <h2>Spiacenti, non abbiamo trovato alcun CD</h2>
+      <?php }  ?>
       </div>
     </main>
 

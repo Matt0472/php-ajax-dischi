@@ -1,17 +1,18 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
 }
 
 body {
-	background: #1E2D3B;
 	min-height: 100vh;
+	font-family: $fontFamily;
+	font-size: $baseFontSize;
+	background: #1E2D3B;
 }
 
 .container {
-	width: 85%;
+	width: $widthInner;
 	height: 100%;
 	margin: 0 auto;
 }

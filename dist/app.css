@@ -1,13 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);/* color */
+
+/* typo */
+
+/* dimension */
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  background: #1E2D3B;
   min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  background: #1E2D3B;
 }
 
 .container {
@@ -60,9 +67,16 @@ main .cds-container .album h3 {
 main .cds-container .album span.author {
   color: #808080;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 main .cds-container .album span.year {
+  font-size: 14px;
   color: #808080;
+}
+
+main .cds-container h2 {
+  color: #ffffff;
+  font-size: 26px;
 }
 

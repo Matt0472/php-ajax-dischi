@@ -15,16 +15,22 @@ main {
 			h3 {
 				margin: 20px 0;
 				color: $primaryColor;
-				font-size: 22px;
+				font-size: $h3FontSize;
 				text-transform: uppercase;
 			}
 			span.author {
 				color: $thirdColor;
-    		font-size: 20px;
+				font-size: $regularFontSize;
+				margin-bottom: 10px;
 			}
 			span.year {
+				font-size: $smallFontSize;
 				color: $thirdColor;
 			}
+		}
+		h2 {
+			color: $primaryColor;
+			font-size: $h2FontSize;
 		}
 	}
 }
