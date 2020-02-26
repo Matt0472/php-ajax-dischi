@@ -16,6 +16,25 @@ $(document).ready(function() {
       }
     }
   );  
+  $('#authors').change(function() {
+    var thisAuthor = $(this).val();
+    console.log(thisAuthor);
+    $.ajax(
+      {
+        url: 'http://localhost/php-ajax-dischi/ajax-database.php',
+        method: 'GET',
+        data: {
+          author: thisAuthor
+        },
+        success: function (data) {
+          printResult(data);
+        },
+        error: function (request, state, errors) {
+          alert('errore');
+        }
+      }
+    );  
+  });
 });
 
 
@@ -27,7 +46,6 @@ function printResult(result) {
   for (var i = 0; i < result.length; i++) {
     if (result.length > 0) {
       var thisCD = result[i];
-      console.log(thisCD);
       var context = {
         poster: thisCD.poster,
         title: thisCD.title,
