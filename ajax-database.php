@@ -55,4 +55,6 @@
       'poster' => 'https://img.discogs.com/3d4odXocR3qUg8Qv_R4W_r7tkVE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-13744395-1560193308-7189.jpeg.jpg'
      ]
  ];
+  header('Content-Type: application/json');
+  echo json_encode($database);
 ?>
