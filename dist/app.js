@@ -15838,10 +15838,7 @@ $(document).ready(function () {
           var html = template(context);
           $('.cds-container').append(html);
         } else {
-          var source = $('#noresult-template').html();
-          var template = Handlebars.compile(source);
-          var html = template();
-          $('.cds-container').append(html);
+          printNoResult();
         }
       }
     },
@@ -15849,7 +15846,14 @@ $(document).ready(function () {
       alert('errore');
     }
   });
-});
+}); // FUNCTION
+
+function printNoResult() {
+  var source = $('#noresult-template').html();
+  var template = Handlebars.compile(source);
+  var html = template();
+  $('.cds-container').append(html);
+}
 
 /***/ }),
 
